@@ -1,0 +1,95 @@
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    src: url("/assets/Inter-Variable.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-weight: bold;
+    src: url("/assets/Inter-Variable.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: italic;
+    src: url("/assets/Inter-ItalicVariable.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: bold;
+    src: url("/assets/Inter-ItalicVariable.woff2") format("woff2");
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    overflow-x: clip;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#canvas-wrapper canvas {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#info {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    padding-bottom: 1.5rem;
+    padding-inline: 1.5rem;
+    position: relative;
+}
+
+#info a {
+    color: #338eda;
+    -webkit-text-decoration-style: wavy;
+    text-decoration-style: wavy;
+}
+
+@media screen and (max-width: 1080.98px) {
+    /* Screens smaller than 1080.98px */
+    body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 1080.98px) {
+    /* Screens larger than 1080.98px */
+    body > div {
+        -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+        flex: 50%;
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+    }
+
+    #canvas-wrapper canvas {
+        float: right;
+    }
+
+    #info {
+        padding-inline: 3rem;
+    }
+}
