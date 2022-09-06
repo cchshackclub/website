@@ -44,12 +44,14 @@ html {
 }
 
 #canvas-wrapper canvas {
+    float: right;
     position: sticky;
     top: 0;
     left: 0;
 }
 
 #info {
+    flex-grow: 1;
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     letter-spacing: -1px;
@@ -76,19 +78,6 @@ html {
 
 @media screen and (min-width: 1080.98px) {
     /* Screens larger than 1080.98px */
-    body > div {
-        -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-        flex: 50%;
-        -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-        flex-grow: 0;
-    }
-
-    #canvas-wrapper canvas {
-        float: right;
-    }
-
     #info {
         padding-inline: 3rem;
     }
