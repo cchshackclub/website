@@ -112,7 +112,7 @@ window.onload = () => {
     if (months[nextMeeting.getMonth() + 1] !== undefined) {
         document.getElementById("date").innerText = `${
             months[nextMeeting.getMonth() + 1]
-        } ${nextMeeting.getDate()}, ${nextMeeting.getFullYear()}, in the library`;
+        } ${nextMeeting.getDate()}, ${nextMeeting.getFullYear()}`;
     } else {
         document.getElementById("date").innerText =
             "No meetings for the summer!";
