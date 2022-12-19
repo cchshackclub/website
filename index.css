@@ -66,6 +66,19 @@ html {
     text-decoration-style: wavy;
 }
 
+#menu {
+    border-top: 1px double;
+    border-bottom: 1px double;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1080.98px) {
     /* Screens smaller than 1080.98px */
     body {
@@ -73,6 +86,10 @@ html {
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+    }
+
+    #menu {
+        display: block;
     }
 }
 
