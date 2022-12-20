@@ -70,6 +70,8 @@ html {
     border-top: 1px double;
     border-bottom: 1px double;
     display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
     justify-content: space-evenly;
     list-style: none;
     padding: 1rem 0;
